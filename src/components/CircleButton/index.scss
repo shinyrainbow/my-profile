@@ -1,0 +1,10 @@
+.circle-button-wrapper{
+    cursor: pointer;
+    border-radius: 50%;
+    .button-icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  }

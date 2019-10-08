@@ -1,0 +1,57 @@
+.content{
+  background: pink;
+    text-align: center;
+    .home-content{
+      // -webkit-transition: all 1s ease-in;
+      padding: 200px 0;
+
+      color: white;
+      font-size: 45px;
+      .position{
+        font-size: 50px;
+        font-weight: bold;
+      }
+      .button{
+        display:inline-block;
+        width: 100px;
+        padding: 10px;
+        font-size: 12px;
+        border-radius: 40px;
+        background: #1974D2;
+        cursor: pointer;
+        &:first-child{
+          margin-right: 20px;
+        }
+        &:hover{
+          background-color: #00308F;
+          -webkit-transition: background-color 0.5s linear;
+        }
+      }
+    }
+    .home-content:hover{
+      -webkit-transition: all 1s ease-in;
+    }
+    .portfolio{
+      height: 400px;
+      background: white;
+
+      .port-app{
+        border: 1px black solid;
+        border-radius: 5px;
+        width: 200px;
+        height: 200px;
+      }
+    }
+    .piano{
+      .covers{
+        font-size: 30px;
+        margin: 0 auto;
+        width: 800px;
+        display: flex; 
+        justify-content: space-between;
+        .cover{
+  
+        }
+      }
+    }
+  }
