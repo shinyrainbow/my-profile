@@ -68,25 +68,22 @@ class Home extends Component {
     return (
       <div className='home-wrapper'>
         <div className={(classnames('header', { 'header-scroll': this.state.scroll }))} >
-          <Menu className='menu' onClick={this.toggleMenu} />
+          {
+            !open &&
+            <Menu className='menu' onClick={this.toggleMenu} />
+          }
           {
             open
             &&
             (
-              <div 
-              className='left-menu'
-              ref={node => {this.wrapperRef = node}}
+              <div
+                className='left-menu'
+                ref={node => { this.wrapperRef = node }}
               >
-                 <Link 
-                //  \key={index}
-                       to='/'
-                        // className='item' 
-                       >
-                        Home
-                      </Link>
-                      <Link to='/portfolio'>Port</Link>
-                      <Link to='/aboutme'>About</Link>
-                      <Link to='/contact'>contact</Link>
+                <Link to='/'><div className='item' onClick={this.toggleMenu}>Home</div> </Link>
+                <Link to='/portfolio'><div className='item' onClick={this.toggleMenu}>Portfolio</div> </Link>
+                <Link to='/aboutme'><div className='item' onClick={this.toggleMenu}>About me</div> </Link>
+                <Link to='/contact'><div className='item' onClick={this.toggleMenu}>Contact</div> </Link>
                 {/* {
                   menus.map((menu, index) => {
                     return (
@@ -99,21 +96,28 @@ class Home extends Component {
                     )
                   })
                 } */}
-                <Github className='icon' />
-                <Gmail className='icon' />
-                <Youtube className='icon' />
-                <Instagram className='icon' />
+                <div className='icons'>
+                <Github className='icon' fill='#ffffff' />
+                <Gmail className='icon' fill='#ffffff' />
+                <Youtube className='icon' fill='#ffffff' />
+                <Instagram className='icon' fill='#ffffff' />
+                </div>
                 {/* <Switch> */}
 
 
                 {/* <Route path='/' component={HomeContent} /> */}
-             
+
                 {/* </Switch> */}
               </div>
             )
           }
+        <div className='icons-header' >
+                <Github className='icon' fill='#ffffff' />
+                <Gmail className='icon' fill='#ffffff' />
+                <Youtube className='icon' fill='#ffffff' />
+                <Instagram className='icon' fill='#ffffff' />
+                </div>
         </div>
-
 
 
 

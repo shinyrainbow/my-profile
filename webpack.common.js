@@ -52,12 +52,12 @@ module.exports = {
       {
         test: /\.(jpg|svg|jpeg|png)$/,
         use: {
-          loader: "file-loader",
-          options: {
-            name: '[name].[hash].[ext]',
-            outputPath: 'imgs',
-            limit: 25000,
-          }
+          loader: "url-loader",
+          // options: {
+          //   name: '[name].[hash].[ext]',
+          //   outputPath: 'imgs',
+          //   limit: 25000,
+          // }
         }
       }
     ]
