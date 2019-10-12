@@ -10,7 +10,7 @@ const About = () => {
             test aboadsfjaidhsfkljhasjkdfhjkasgdfhkjagdshfjkgahjsdgfuttt
             
             <div>
-                WHATTTTT
+                WHATTTTT hahah
             </div>
             </div>
     )
