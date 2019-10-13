@@ -2,7 +2,7 @@ import React from 'react'
 import './index.scss'
 
 const Portfolio = () => {
-console.log('testttt')
+console.log('testttt 7777')
   const ports = [1, 2, 3, 4, 5, 6, 7]
   return (
     <div className='portfolios-wrapper'>
