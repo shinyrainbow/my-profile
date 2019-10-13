@@ -29,6 +29,7 @@ class Home extends Component {
   componentWillUnmount = () => {
     window.removeEventListener('scroll', this.handleScroll);
     document.removeEventListener('mousedown', this.handleClickOutside)
+    console.log('un mountttt')
   }
 
   handleClickOutside = (event) => {
@@ -67,6 +68,7 @@ class Home extends Component {
     const portfolios = ['Onboarding app', 'Template app', 'Chat app', 'Components', 'Todo List', 'Pokemon']
     return (
       <div className='home-wrapper'>
+        hi hi
         <div className={(classnames('header', { 'header-scroll': this.state.scroll }))} >
           {
             !open &&
