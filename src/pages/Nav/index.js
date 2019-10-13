@@ -68,7 +68,7 @@ class Home extends Component {
     const portfolios = ['Onboarding app', 'Template app', 'Chat app', 'Components', 'Todo List', 'Pokemon']
     return (
       <div className='home-wrapper'>
-        hi hi
+        hi hi hehehhe
         <div className={(classnames('header', { 'header-scroll': this.state.scroll }))} >
           {
             !open &&
