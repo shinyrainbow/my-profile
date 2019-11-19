@@ -1,23 +1,34 @@
 import React from 'react'
+import App1 from '../../assets/App1.png'
+import App2 from '../../assets/App2.png'
 import './index.scss'
 
 const Portfolio = () => {
-console.log('testttt 7777')
-  const ports = [1, 2, 3, 4, 5, 6, 7]
+  console.log('testttt 7777')
+  const ports = [
+    {
+      file: 'App1',
+      description: 'This is example app for onboarding new employees.',
+    },
+    {
+      file: 'App2',
+      description: 'This is Todolist, you can add, edit, remove task',
+    }
+  ]
   return (
     <div className='portfolios-wrapper'>
       <div className='title'>Portfolios</div>
-      
-    <div className='portfolios'>
+
+      <div className='portfolios'>
         {
           ports.map((item, index) => {
             return (
               <div className='port'>
-                
-                port
+
+                <img src={item.file} />
                 <div className='detail'>
-                  hahahhaa
-                  </div>
+                  {item.description}
+                </div>
               </div>
             )
           })

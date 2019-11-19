@@ -25,17 +25,23 @@ const HomeContent = () => {
   return (
 
     <div className='content'>
-      {/* <img src={Lisa}/>
-          <img src={Lisa2}/> */}
-      {/* testtttt iojoihjoihiohioh */}
-      <div className='home-content'>
-          <div className='home-text'>
 
-        <div>Kornkanok L.</div>
-        <div className='position'>Frontend Developer</div>
-        <div className='about-me'>ABOUT ME</div>
-        <div className='button'>PORTFOLIO</div>
+      <div className='home-content'>
+        <div className='home-text'>
+
+          <div>Kornkanok L.</div>
+          <div className='position'>Frontend Developer</div>
+          <div className='about-me' >
+            <Link to='/aboutme'>ABOUT ME</Link>
           </div>
+          <div className='button'>
+
+          <Link to='/portfolio'>PORTFOLIO</Link>
+          </div>
+
+          {/* <div className='about-me'> ABOUT ME</div>
+        <div className='button'>PORTFOLIO</div> */}
+        </div>
       </div>
       <div className='port-wrapper'>
         <div className='portfolio'>
@@ -92,7 +98,7 @@ const HomeContent = () => {
         </div>
         <div>Copyright 2019 © Kornkanok L.</div>
       </div>
-    </div>
+    </div >
   )
 }
 
