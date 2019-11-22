@@ -89,7 +89,7 @@
 /***/ 56:
 /***/ (function(module, exports) {
 
-console.log('askdbajksd');
+console.log('test');
 
 /***/ })
 
