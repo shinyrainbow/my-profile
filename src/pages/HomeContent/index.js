@@ -8,6 +8,8 @@ import {
 } from '../../components/Icons'
 import { Route, Link } from 'react-router-dom'
 import classnames from 'classnames'
+import App1 from '../../assets/App1.png'
+import App2 from '../../assets/App2.png'
 import Slider from '../../components/Slider'
 import Portfolio from '../Portfolio'
 import About from '../About'
@@ -18,10 +20,17 @@ import './index.scss'
 
 const HomeContent = () => {
   // const { open } = this.state  
-  console.log('WTFFsdhfklajdsF')
   const menus = ['HOME', 'PORTFOLIO', 'ABOUT ME', 'CONTACT']
   const tos = ['/', '/portfolio', '/aboutme', 'contact']
-  const portfolios = ['Onboarding app', 'Template app', 'Chat app', 'Components', 'Todo List', 'Pokemon']
+  const portfolios = [
+
+    {file: App1, name: 'Onboarding app', url: 'https://onboarding-test-app.herokuapp.com/' },
+    // 'Template app', 
+    // 'Chat app',
+    //  'Components',
+    { file: App2, name: 'Todo List', url: 'https://todolist-complete-test-app.herokuapp.com/' }
+    //  'Pokemon'
+  ]
   return (
 
     <div className='content'>
@@ -36,7 +45,7 @@ const HomeContent = () => {
           </div>
           <div className='button'>
 
-          <Link to='/portfolio'>PORTFOLIO</Link>
+            <Link to='/portfolio'>PORTFOLIO</Link>
           </div>
 
           {/* <div className='about-me'> ABOUT ME</div>
@@ -50,9 +59,12 @@ const HomeContent = () => {
             {
               portfolios.map((item, index) => {
                 return (
-                  <div key={index} className='port-app'>
+                  <div key={index} className='port-app' onClick={() => window.open(item.url)}>
                     <div>
-                      {item}
+                      {item.name}
+                    </div>
+                    <div>
+                      <img src={item.file} width='100%'/>
                     </div>
                   </div>
                 )
@@ -60,27 +72,21 @@ const HomeContent = () => {
             }
 
           </Slider>
-          <div className='button'>See all my portfolio</div>
+          {/* <div className ='button'><Link to='/portfolio'>See all my portfolio</Link></div> */}
         </div>
       </div>
       <div className='piano'>
-        <div className='piano-text'>I also did some piano cover :D</div>
+        <div className='piano-text'>I also have some piano cover :D</div>
         <div className='covers'>
           <div className='cover'>
             <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-              width="200px" height="200px" type="text/html"
+              width="350px" height="200px" type="text/html"
               src="https://www.youtube.com/embed/zuzovwrHHyc?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode.com/en/</a></small></div><div><small><a href="http://add-link-exchange.com">Add Link Exchange</a></small></div><div><small><a href="https://youtubeembedcode.com/nl/">youtubeembedcode.com/nl/</a></small></div><div><small><a href="http://add-link-exchange.com">add-link-exchange.com</a></small></div></iframe>
           </div>
 
           <div className='cover'>
             <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-              width="200px" height="200px" type="text/html"
-              src="https://www.youtube.com/embed/shuCp4dSTO4?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>
-          </div>
-
-          <div className='cover'>
-            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-              width="200px" height="200px" type="text/html"
+              width="350px" height="200px" type="text/html"
               src="https://www.youtube.com/embed/8ERqP6wZR_U?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>
           </div>
 
@@ -91,10 +97,10 @@ const HomeContent = () => {
         <div className='follows'>follow me at</div>
         <div className='icons'>
 
-          <Github className='icon' />
-          <Gmail className='icon' />
-          <Youtube className='icon' />
-          <Instagram className='icon' />
+        <a href='https://github.com/shinyrainbow?tab=repositories'><Github className='icon' fill='#ffffff' /></a>
+                <a href='mailto:kornkanok.lieng@gmail.com'><Gmail className='icon' fill='#ffffff' /></a>
+                <a href='https://www.youtube.com/channel/UClIaSr8ht7HEwAU_4MoZxlQ'><Youtube className='icon' fill='#ffffff' /></a>
+                <a href='https://www.instagram.com/aoyy_k/'><Instagram className='icon' fill='#ffffff' /></a>
         </div>
         <div>Copyright 2019 © Kornkanok L.</div>
       </div>

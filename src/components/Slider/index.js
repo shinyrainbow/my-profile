@@ -131,7 +131,7 @@ class CommonSlider extends Component {
       variableWidth: true,
       slidesToScroll: 2,
       arrows: false,
-      infinite: true,
+      infinite: false,
       beforeChange: this.beforeSlideChangeHandler,
     }
 

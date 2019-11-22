@@ -29,7 +29,6 @@ class Home extends Component {
   componentWillUnmount = () => {
     window.removeEventListener('scroll', this.handleScroll);
     document.removeEventListener('mousedown', this.handleClickOutside)
-    console.log('un mountttt')
   }
 
   handleClickOutside = (event) => {
@@ -46,7 +45,6 @@ class Home extends Component {
 
   handleScroll = () => {
     if (window.scrollY > 50) {
-      console.log('scrollll')
       this.setState({
         scroll: true
       })
@@ -98,10 +96,10 @@ class Home extends Component {
                   })
                 } */}
                 <div className='icons'>
-                <Github className='icon' fill='#ffffff' />
-                <Gmail className='icon' fill='#ffffff' />
-                <Youtube className='icon' fill='#ffffff' />
-                <Instagram className='icon' fill='#ffffff' />
+                <a target='_blank' href='https://github.com/shinyrainbow?tab=repositories'><Github className='icon' fill='#ffffff' /></a>
+            <a target='_blank' href='mailto:kornkanok.lieng@gmail.com'><Gmail className='icon' fill='#ffffff' /></a>
+            <a target='_blank' href='https://www.youtube.com/channel/UClIaSr8ht7HEwAU_4MoZxlQ'><Youtube className='icon' fill='#ffffff' /></a>
+            <a target='_blank' href='https://www.instagram.com/aoyy_k/'><Instagram className='icon' fill='#ffffff' /></a>
                 </div>
                 {/* <Switch> */}
 
@@ -112,12 +110,12 @@ class Home extends Component {
               </div>
             )
           }
-        <div className='icons-header' >
-                <Github className='icon' fill='#ffffff' />
-                <Gmail className='icon' fill='#ffffff' />
-                <Youtube className='icon' fill='#ffffff' />
-                <Instagram className='icon' fill='#ffffff' />
-                </div>
+          <div className='icons-header' >
+            <a target='_blank' href='https://github.com/shinyrainbow?tab=repositories'><Github className='icon' fill='#ffffff' /></a>
+            <a target='_blank' href='mailto:kornkanok.lieng@gmail.com'><Gmail className='icon' fill='#ffffff' /></a>
+            <a target='_blank' href='https://www.youtube.com/channel/UClIaSr8ht7HEwAU_4MoZxlQ'><Youtube className='icon' fill='#ffffff' /></a>
+            <a target='_blank' href='https://www.instagram.com/aoyy_k/'><Instagram className='icon' fill='#ffffff' /></a>
+          </div>
         </div>
 
 

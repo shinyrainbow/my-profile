@@ -4,14 +4,15 @@ import App2 from '../../assets/App2.png'
 import './index.scss'
 
 const Portfolio = () => {
-  console.log('testttt 7777')
   const ports = [
     {
-      file: 'App1',
+      file: App1,
+      url: 'https://onboarding-test-app.herokuapp.com/',
       description: 'This is example app for onboarding new employees.',
     },
     {
-      file: 'App2',
+      file: App2,
+      url: 'https://todolist-complete-test-app.herokuapp.com/',
       description: 'This is Todolist, you can add, edit, remove task',
     }
   ]
@@ -23,9 +24,9 @@ const Portfolio = () => {
         {
           ports.map((item, index) => {
             return (
-              <div className='port'>
+              <div className='port' onClick={() => window.open(item.url)}>
 
-                <img src={item.file} />
+                <img src={item.file} className='port-image' />
                 <div className='detail'>
                   {item.description}
                 </div>

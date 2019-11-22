@@ -1,1 +1,1 @@
-console.log('askdbajksd')
+console.log('test')

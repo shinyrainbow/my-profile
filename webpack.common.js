@@ -59,17 +59,17 @@ module.exports = {
         },
         ]
       },
-      {
-        test: /\.(jpg|svg|jpeg|png)$/,
-        use: {
-          loader: "url-loader",
-          // options: {
-          //   name: '[name].[hash].[ext]',
-          //   outputPath: 'imgs',
-          //   limit: 25000,
-          // }
-        }
-      }
+      // {
+      //   test: /\.(jpg|svg|jpeg|png)$/,
+      //   use: {
+      //     loader: "url-loader",
+      //     // options: {
+      //     //   name: '[name].[hash].[ext]',
+      //     //   outputPath: 'imgs',
+      //     //   limit: 25000,
+      //     // }
+      //   }
+      // }
     ]
   }
 }

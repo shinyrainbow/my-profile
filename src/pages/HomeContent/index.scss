@@ -48,6 +48,7 @@
         font-size: 12px;
         border-radius: 40px;
         color: white;
+        // background-color: #000000;
         cursor: pointer;
         a{
           -webkit-appearance: none;
@@ -62,28 +63,27 @@
         }
       }
     }
-
   }
-  // .home-content:hover{
-  //   -webkit-transition: all 1s ease-in;
-  // }
   .port-wrapper{
     margin-top: -80px;
     color: white;
-    // transform: skewY(20deg);
     transform: skew(0, -5deg);
     background-color: #155F4B;
+    text-align: center;
     .portfolio{
-      // back
+      color: #ffffff;
       padding: 40px 0;
       transform: skew(0, 5deg);
-      height: 500px;
-      // background: white;
+      .button{
+        width: 80px;
+        border-radius: 4px;
+        background: #000000;
+        // text-align: center;
+      }
       .port-app{
         border: 1px black solid;
         border-radius: 5px;
         width: 200px;
-        height: 300px;
         cursor: pointer;
       }
     }
@@ -107,7 +107,6 @@
   }
 
   .footer{
-    // height: 500px;
     padding: 20px 0;
     background: white;
     opacity: 0.6;

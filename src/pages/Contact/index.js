@@ -7,17 +7,19 @@ const Contact = () => {
 
       <div className='title'>Contact me</div>
 
-
       <div className='contact-box'>
-        <div className='form-field'>
-          <input name='name' placeholder='Enter your name'/>
-        </div>
-        <div className='form-field'>
-          <input name='email' placeholder='enter your email'/>
-        </div>
-        <div className='form-field'>
-          <textarea />
-        </div>
+        <form action="mailto:kornkanok.lieng@gmail.com" method="post" enctype="text/plain">
+          <div className='form-field'>
+            <input type="text" name="name" placeholder='Enter your name' />
+          </div>
+          <div className='form-field'>
+            <input type="text" name="mail" placeholder='Enter your e-mail' />
+          </div>
+            <input type="submit" value="Send me an e-mail" />
+        </form>
+
+
+       
       </div>
 
 
@@ -31,12 +33,7 @@ const Contact = () => {
         <div className='info'>
           Bangkok, Thailand
         </div>
-        {/* <div className='info'>
 
-        </div>
-        <div className='info'>
-          090-979-1689
-        </div> */}
       </div>
 
     </div>
