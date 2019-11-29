@@ -19,17 +19,14 @@ import Lisa2 from '../../assets/lisa2.png'
 import './index.scss'
 
 const HomeContent = () => {
-  // const { open } = this.state  
   const menus = ['HOME', 'PORTFOLIO', 'ABOUT ME', 'CONTACT']
   const tos = ['/', '/portfolio', '/aboutme', 'contact']
   const portfolios = [
-
-    {file: App1, name: 'Onboarding app', url: 'https://onboarding-test-app.herokuapp.com/' },
+    { file: App1, name: 'Onboarding app', url: 'https://onboarding-test-app.herokuapp.com/' },
     // 'Template app', 
     // 'Chat app',
     //  'Components',
     { file: App2, name: 'Todo List', url: 'https://todolist-complete-test-app.herokuapp.com/' }
-    //  'Pokemon'
   ]
   return (
 
@@ -44,12 +41,8 @@ const HomeContent = () => {
             <Link to='/aboutme'>ABOUT ME</Link>
           </div>
           <div className='button'>
-
             <Link to='/portfolio'>PORTFOLIO</Link>
           </div>
-
-          {/* <div className='about-me'> ABOUT ME</div>
-        <div className='button'>PORTFOLIO</div> */}
         </div>
       </div>
       <div className='port-wrapper'>
@@ -64,7 +57,7 @@ const HomeContent = () => {
                       {item.name}
                     </div>
                     <div>
-                      <img src={item.file} width='100%'/>
+                      <img src={item.file} width='100%' />
                     </div>
                   </div>
                 )
@@ -96,11 +89,10 @@ const HomeContent = () => {
       <div className='footer'>
         <div className='follows'>follow me at</div>
         <div className='icons'>
-
-        <a href='https://github.com/shinyrainbow?tab=repositories'><Github className='icon' fill='#ffffff' /></a>
-                <a href='mailto:kornkanok.lieng@gmail.com'><Gmail className='icon' fill='#ffffff' /></a>
-                <a href='https://www.youtube.com/channel/UClIaSr8ht7HEwAU_4MoZxlQ'><Youtube className='icon' fill='#ffffff' /></a>
-                <a href='https://www.instagram.com/aoyy_k/'><Instagram className='icon' fill='#ffffff' /></a>
+        <a href='https://github.com/shinyrainbow?tab=repositories'><Github className='icon' fill='#000000' /></a>
+          <a href='mailto:kornkanok.lieng@gmail.com'><Gmail className='icon' fill='#000000' /></a>
+          <a href='https://www.youtube.com/channel/UClIaSr8ht7HEwAU_4MoZxlQ'><Youtube className='icon' fill='#000000' /></a>
+          <a href='https://www.instagram.com/aoyy_k/'><Instagram className='icon' fill='#000000' /></a>
         </div>
         <div>Copyright 2019 © Kornkanok L.</div>
       </div>

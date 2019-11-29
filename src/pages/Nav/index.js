@@ -42,7 +42,6 @@ class Home extends Component {
     }
   }
 
-
   handleScroll = () => {
     if (window.scrollY > 50) {
       this.setState({
@@ -67,10 +66,7 @@ class Home extends Component {
     return (
       <div className='home-wrapper'>
         <div className={(classnames('header', { 'header-scroll': this.state.scroll }))} >
-          {
-            !open &&
-            <Menu className='menu' onClick={this.toggleMenu} />
-          }
+          {!open && <Menu className='menu' onClick={this.toggleMenu} />}
           {
             open
             &&
@@ -83,30 +79,12 @@ class Home extends Component {
                 <Link to='/portfolio'><div className='item' onClick={this.toggleMenu}>Portfolio</div> </Link>
                 <Link to='/aboutme'><div className='item' onClick={this.toggleMenu}>About me</div> </Link>
                 <Link to='/contact'><div className='item' onClick={this.toggleMenu}>Contact</div> </Link>
-                {/* {
-                  menus.map((menu, index) => {
-                    return (
-                      <Link key={index}
-                       to={tos[index]}
-                        // className='item' 
-                       >
-                        {menu}
-                      </Link>
-                    )
-                  })
-                } */}
                 <div className='icons'>
-                <a target='_blank' href='https://github.com/shinyrainbow?tab=repositories'><Github className='icon' fill='#ffffff' /></a>
-            <a target='_blank' href='mailto:kornkanok.lieng@gmail.com'><Gmail className='icon' fill='#ffffff' /></a>
-            <a target='_blank' href='https://www.youtube.com/channel/UClIaSr8ht7HEwAU_4MoZxlQ'><Youtube className='icon' fill='#ffffff' /></a>
-            <a target='_blank' href='https://www.instagram.com/aoyy_k/'><Instagram className='icon' fill='#ffffff' /></a>
+                  <a target='_blank' href='https://github.com/shinyrainbow?tab=repositories'><Github className='icon' fill='#ffffff' /></a>
+                  <a target='_blank' href='mailto:kornkanok.lieng@gmail.com'><Gmail className='icon' fill='#ffffff' /></a>
+                  <a target='_blank' href='https://www.youtube.com/channel/UClIaSr8ht7HEwAU_4MoZxlQ'><Youtube className='icon' fill='#ffffff' /></a>
+                  <a target='_blank' href='https://www.instagram.com/aoyy_k/'><Instagram className='icon' fill='#ffffff' /></a>
                 </div>
-                {/* <Switch> */}
-
-
-                {/* <Route path='/' component={HomeContent} /> */}
-
-                {/* </Switch> */}
               </div>
             )
           }
@@ -117,10 +95,6 @@ class Home extends Component {
             <a target='_blank' href='https://www.instagram.com/aoyy_k/'><Instagram className='icon' fill='#ffffff' /></a>
           </div>
         </div>
-
-
-
-
       </div>
     )
   }

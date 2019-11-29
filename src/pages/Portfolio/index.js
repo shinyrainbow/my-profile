@@ -19,22 +19,17 @@ const Portfolio = () => {
   return (
     <div className='portfolios-wrapper'>
       <div className='title'>Portfolios</div>
-
       <div className='portfolios'>
         {
           ports.map((item, index) => {
             return (
               <div className='port' onClick={() => window.open(item.url)}>
-
                 <img src={item.file} className='port-image' />
-                <div className='detail'>
-                  {item.description}
-                </div>
+                <div className='detail'>{item.description}</div>
               </div>
             )
           })
         }
-
       </div>
     </div>
   )
