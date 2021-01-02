@@ -35,6 +35,7 @@ Department of Mathematics, Computer Science.`
             <li>Work as a Quality Assurance Engineer at Agoda</li>
             <li>Work as a Frontend developer at Scale360solutions</li>
             <li>Work as a Frontend developer at 30secondstofly</li>
+            <li>Work as a Frontend developer at Refinitiv</li>
           </ul>
         </div>
       </div>
