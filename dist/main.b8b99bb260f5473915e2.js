@@ -4228,7 +4228,7 @@ __webpack_require__(72);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var About = function About() {
-  var info = "Hello, my name is Aoy (Kornkanok Liengsaengthong).\n  I am a Frontend developer at 30secondstofly, Bangkok, Thailand.\nI have experience in web application development since 2018.\nAnd I am self-taught how to develop website since 2016.";
+  var info = "Hello, my name is Aoy (Kornkanok Liengsaengthong).\n  I am a Frontend developer at Refinitiv, Bangkok, Thailand.\nI have experience in web application development since 2018.\nAnd I am self-taught how to develop website since 2016.";
   var education = "Bachelor of Science, Chulalongkorn University, Bangkok, Thailand\nDepartment of Mathematics, Computer Science.";
   return _react["default"].createElement("div", {
     className: "about-wrapper"
