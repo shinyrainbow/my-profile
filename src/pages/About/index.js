@@ -3,7 +3,7 @@ import './index.scss'
 
 const About = () => {
   const info = `Hello, my name is Aoy (Kornkanok Liengsaengthong).
-  I am a Frontend developer at 30secondstofly, Bangkok, Thailand.
+  I am a Frontend developer at Refinitiv, Bangkok, Thailand.
 I have experience in web application development since 2018.
 And I am self-taught how to develop website since 2016.`
   const education = `Bachelor of Science, Chulalongkorn University, Bangkok, Thailand
