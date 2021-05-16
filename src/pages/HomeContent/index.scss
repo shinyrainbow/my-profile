@@ -1,26 +1,22 @@
-.content{
-
+.content {
   text-align: center;
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../../assets/me2.png);
-
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../../assets/me2.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  .home-content{
+  .home-content {
     padding: 100px 0 330px 0;
-    
     color: white;
     font-size: 45px;
     width: 100%;
-    .home-text{
-      animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-      
-      .position{
+    .home-text {
+      animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      .position {
         font-size: 50px;
         font-weight: bold;
       }
-      .about-me{
-        display:inline-block;
+      .about-me {
+        display: inline-block;
         width: 100px;
         padding: 10px;
         font-size: 12px;
@@ -29,20 +25,20 @@
         // background: #1974D2;
         cursor: pointer;
         margin-right: 35px;
-        a{
+        a {
           -webkit-appearance: none;
           font-style: none;
           text-underline-position: none;
           color: white;
         }
-        &:hover{
-          background-color: #00308F;
+        &:hover {
+          background-color: #00308f;
           -webkit-transition: background-color 0.5s linear;
         }
       }
-      .button{
+      .button {
         border: 2px white solid;
-        display:inline-block;
+        display: inline-block;
         width: 100px;
         padding: 10px;
         font-size: 12px;
@@ -50,71 +46,105 @@
         color: white;
         // background-color: #000000;
         cursor: pointer;
-        a{
+        a {
           -webkit-appearance: none;
           font-style: none;
           text-underline-position: none;
           color: white;
         }
-        &:hover{
-
-          background: #155F4B;
+        &:hover {
+          background: #155f4b;
           -webkit-transition: background-color 0.5s linear;
         }
       }
     }
   }
-  .port-wrapper{
-    margin-top: -80px;
-    color: white;
-    transform: skew(0, -5deg);
-    background-color: #155F4B;
-    text-align: center;
-    .portfolio{
-      color: #ffffff;
-      padding: 40px 0;
-      transform: skew(0, 5deg);
-      .button{
-        width: 80px;
-        border-radius: 4px;
-        background: #000000;
-        // text-align: center;
-      }
-      .port-app{
-        border: 1px black solid;
-        border-radius: 5px;
+  .small-profile {
+    display: flex;
+    background-color: white;
+    padding: 60px 60px;
+    align-items: center;
+    .profile-image {
+      .my-pic {
         width: 200px;
-        cursor: pointer;
+      }
+    }
+    .small-detail {
+      padding: 0 20px;
+      text-align: left;
+      span {
+        font-weight: 800;
+        padding-right: 15px;
+        color: darkgreen;
+      }
+      .detail {
+        margin-top: 20px;
+        font-style: italic;
       }
     }
   }
-  .piano{
+  .port-wrapper {
+    background-color: #155f4b;
+    text-align: center;
+    padding: 40px 60px;
+    .port-title {
+      color: white;
+    }
+    .projects {
+      display: flex;
+      justify-content: space-between;
+      .port-app {
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 350px;
+        height: 250px;
+        .project-description {
+          color: lightseagreen;
+        }
+      }
+    }
+    .view-more-project{
+      button{
+        margin: 0 auto;
+      }
+    }
+  }
+  .other-projects{
+    padding: 20px;
+    font-size: 15px;
+    vertical-align: middle;
+    background-color: white;
+    .yt-icon{
+      padding-left: 10px;
+      display: inline-block;
+      vertical-align: bottom;
+      height: 20px;
+    }
+  }
+  .piano {
     background: transparent;
-    padding: 50px 0 80px 0;
-    .piano-text{
+    padding: 150px 0 80px 0;
+    .piano-text {
       padding: 20px 0 50px 0;
     }
-    .covers{
+    .covers {
       font-size: 30px;
       margin: 0 auto;
       width: 800px;
-      display: flex; 
+      display: flex;
       justify-content: space-between;
-      .cover{
-
-      }
     }
   }
 
-  .footer{
+  .footer {
     padding: 20px 0;
     background: white;
     opacity: 0.6;
-    .follows{
+    .follows {
       text-align: center;
       margin-bottom: 10px;
     }
-    .icons{
+    .icons {
       justify-content: space-between;
       cursor: pointer;
       margin: 0 auto;
@@ -125,15 +155,13 @@
   }
 }
 
-
 @keyframes slide-top {
   0% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
     -webkit-transform: translateY(100px);
-            transform: translateY(100px);
+    transform: translateY(100px);
   }
 }
-

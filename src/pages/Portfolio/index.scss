@@ -1,12 +1,14 @@
 .portfolios-wrapper{
   padding-top: 80px;
   height: 100%;
-  background: linear-gradient(to right,#6190E8, #A7BFE8);
+  // background-color: lightslategray;
+  // background: linear-gradient(to right,#6190E8, #A7BFE8);
   .title{
     text-align: center;
     font-size: 60px;
   }
   .portfolios{
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

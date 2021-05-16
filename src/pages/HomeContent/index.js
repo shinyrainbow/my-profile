@@ -4,18 +4,21 @@ import {
   Youtube,
   Github,
   Instagram,
+  LinkIn,
   Gmail,
 } from '../../components/Icons'
+import CommonButton from '../../components/CommonButton'
 import { Route, Link } from 'react-router-dom'
 import classnames from 'classnames'
 import App1 from '../../assets/App1.png'
 import App2 from '../../assets/App2.png'
-import Slider from '../../components/Slider'
-import Portfolio from '../Portfolio'
+// import Slider from '../../components/Slider'
+// import Portfolio from '../Portfolio'
 import About from '../About'
 import Contact from '../Contact'
-import Lisa from '../../assets/lisa1.png'
-import Lisa2 from '../../assets/lisa2.png'
+// import Lisa from '../../assets/lisa1.png'
+// import Lisa2 from '../../assets/lisa2.png'
+import Kornkanok from '../../assets/Kornkanok.jpg'
 import './index.scss'
 
 const HomeContent = () => {
@@ -28,6 +31,11 @@ const HomeContent = () => {
     //  'Components',
     { file: App2, name: 'Todo List', url: 'https://todolist-complete-test-app.herokuapp.com/' }
   ]
+  const details = `I am a front-end developer.
+  I have keen interest in technology,
+  application development and learning new skills.
+  I am looking for new position to be working with React js.
+  I also have knowledge of SEO and used to work with online banking and travel agency fields.`
   return (
 
     <div className='content'>
@@ -45,9 +53,65 @@ const HomeContent = () => {
           </div>
         </div>
       </div>
+      <div className="small-profile">
+        <div className="profile-image">
+          <img src={Kornkanok} className="my-pic" />
+        </div>
+        <div className="small-detail">
+          <div>
+            <span>
+              NAME:
+              </span>
+               Kornkanok  Liengsaengthong (Aoy)
+              </div>
+          <div>
+            <span>
+              POSITION:
+            </span>
+             Frontend Developer
+              </div>
+          <div className="detail">
+            {details}
+          </div>
+          <Link to='/aboutme'>
+            <CommonButton text="View More About Me" />
+          </Link>
+        </div>
+      </div>
       <div className='port-wrapper'>
-        <div className='portfolio'>
-          <div>Here are some of my applications </div>
+        <h2 className="port-title">
+          Example of my side projects
+      </h2>
+        <div className="projects">
+
+          {
+            portfolios.map((item, index) => {
+              return (
+                <div key={index} className='port-app' onClick={() => window.open(item.url)}>
+                  <div className="project-description">
+                    {item.name}
+                  </div>
+                  <div>
+                    <img src={item.file} width='100%' />
+                  </div>
+                </div>
+              )
+            })
+          }
+
+        </div>
+        <div className="view-more-project">
+          <Link to='/portfolio'>
+            <CommonButton text="View More Projects" color="white" />
+          </Link>
+
+        </div>
+
+     
+
+
+        {/* <div className='portfolio'> */}
+        {/* <div>Here are some of my applications </div>
           <Slider>
             {
               portfolios.map((item, index) => {
@@ -62,13 +126,21 @@ const HomeContent = () => {
                   </div>
                 )
               })
-            }
+            } */}
 
-          </Slider>
-          {/* <div className ='button'><Link to='/portfolio'>See all my portfolio</Link></div> */}
-        </div>
+        {/* </Slider> */}
+        {/* <div className ='button'><Link to='/portfolio'>See all my portfolio</Link></div> */}
+        {/* </div> */}
       </div>
-      <div className='piano'>
+      <div className="other-projects">
+          I also have my little piano cover :D 😂 you can visit my YT Channel >> 
+          <div className="yt-icon">
+
+        <a target='_blank' href='https://www.youtube.com/channel/UClIaSr8ht7HEwAU_4MoZxlQ'><Youtube className='icon' fill='#000000' /></a>
+          </div>
+        </div>
+      <Footer />
+      {/* <div className='piano'>
         <div className='piano-text'>I also have some piano cover :D</div>
         <div className='covers'>
           <div className='cover'>
@@ -84,19 +156,28 @@ const HomeContent = () => {
           </div>
 
         </div>
-      </div>
+      </div> */}
 
-      <div className='footer'>
-        <div className='follows'>follow me at</div>
-        <div className='icons'>
-        <a href='https://github.com/shinyrainbow?tab=repositories'><Github className='icon' fill='#000000' /></a>
-          <a href='mailto:kornkanok.lieng@gmail.com'><Gmail className='icon' fill='#000000' /></a>
-          <a href='https://www.youtube.com/channel/UClIaSr8ht7HEwAU_4MoZxlQ'><Youtube className='icon' fill='#000000' /></a>
-          <a href='https://www.instagram.com/aoyy_k/'><Instagram className='icon' fill='#000000' /></a>
-        </div>
-        <div>Copyright 2019 © Kornkanok L.</div>
-      </div>
+
     </div >
+  )
+}
+
+const Footer = () => {
+  return (
+    <div className='footer'>
+      <div className='follows'>follow me at</div>
+      <div className='icons'>
+        <a href='https://github.com/shinyrainbow?tab=repositories'><Github className='icon' fill='#000000' /></a>
+        <a href='mailto:kornkanok.lieng@gmail.com'><Gmail className='icon' fill='#000000' /></a>
+        <a href='https://www.linkedin.com/in/kornkanok-liengsaengthong-15b001161/'><LinkIn className='icon' fill='#000000' /></a>
+
+
+        {/* <a href='https://www.youtube.com/channel/UClIaSr8ht7HEwAU_4MoZxlQ'><Youtube className='icon' fill='#000000' /></a> */}
+        {/* <a href='https://www.instagram.com/aoyy_k/'><Instagram className='icon' fill='#000000' /></a> */}
+      </div>
+      <div>Copyright 2019 © Kornkanok L.</div>
+    </div>
   )
 }
 

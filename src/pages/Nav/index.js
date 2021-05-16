@@ -4,6 +4,7 @@ import {
   Youtube,
   Github,
   Instagram,
+  LinkIn,
   Gmail,
 } from '../../components/Icons'
 import { Route, Link, Switch } from 'react-router-dom'
@@ -82,8 +83,9 @@ class Home extends Component {
                 <div className='icons'>
                   <a target='_blank' href='https://github.com/shinyrainbow?tab=repositories'><Github className='icon' fill='#ffffff' /></a>
                   <a target='_blank' href='mailto:kornkanok.lieng@gmail.com'><Gmail className='icon' fill='#ffffff' /></a>
-                  <a target='_blank' href='https://www.youtube.com/channel/UClIaSr8ht7HEwAU_4MoZxlQ'><Youtube className='icon' fill='#ffffff' /></a>
-                  <a target='_blank' href='https://www.instagram.com/aoyy_k/'><Instagram className='icon' fill='#ffffff' /></a>
+                  <a target='_blank' href='https://www.linkedin.com/in/kornkanok-liengsaengthong-15b001161/'><LinkIn className='icon' fill='#ffffff' /></a>
+                  {/* <a target='_blank' href='https://www.youtube.com/channel/UClIaSr8ht7HEwAU_4MoZxlQ'><Youtube className='icon' fill='#ffffff' /></a>
+                  <a target='_blank' href='https://www.instagram.com/aoyy_k/'><Instagram className='icon' fill='#ffffff' /></a> */}
                 </div>
               </div>
             )
@@ -91,8 +93,10 @@ class Home extends Component {
           <div className='icons-header' >
             <a target='_blank' href='https://github.com/shinyrainbow?tab=repositories'><Github className='icon' fill='#ffffff' /></a>
             <a target='_blank' href='mailto:kornkanok.lieng@gmail.com'><Gmail className='icon' fill='#ffffff' /></a>
-            <a target='_blank' href='https://www.youtube.com/channel/UClIaSr8ht7HEwAU_4MoZxlQ'><Youtube className='icon' fill='#ffffff' /></a>
-            <a target='_blank' href='https://www.instagram.com/aoyy_k/'><Instagram className='icon' fill='#ffffff' /></a>
+            <a target='_blank' href='https://www.linkedin.com/in/kornkanok-liengsaengthong-15b001161/'><LinkIn className='icon' fill='#ffffff' /></a>
+
+            {/* <a target='_blank' href='https://www.youtube.com/channel/UClIaSr8ht7HEwAU_4MoZxlQ'><Youtube className='icon' fill='#ffffff' /></a>
+            <a target='_blank' href='https://www.instagram.com/aoyy_k/'><Instagram className='icon' fill='#ffffff' /></a> */}
           </div>
         </div>
       </div>

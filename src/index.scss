@@ -3,3 +3,7 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
 }
+
+html, body, #root, .app{
+  height: 100%;
+}

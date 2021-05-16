@@ -4,6 +4,7 @@ import Instagram from './Instagram'
 import Youtube from './Youtube'
 import Gmail from './Gmail'
 import Arrow from './Arrow'
+import LinkIn from './LinkIn'
 
 export {
     Menu,
@@ -12,4 +13,5 @@ export {
     Gmail,
     Youtube,
     Arrow,
+    LinkIn,
 }
