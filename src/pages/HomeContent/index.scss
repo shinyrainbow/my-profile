@@ -64,10 +64,8 @@
     background-color: white;
     padding: 60px 60px;
     align-items: center;
-    .profile-image {
-      .my-pic {
-        width: 200px;
-      }
+    .profile-image, .my-pic{
+      width: 200px;
     }
     .small-detail {
       padding: 0 20px;

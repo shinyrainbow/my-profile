@@ -104,7 +104,6 @@ const HomeContent = () => {
           <Link to='/portfolio'>
             <CommonButton text="View More Projects" color="white" />
           </Link>
-
         </div>
 
      
@@ -136,7 +135,7 @@ const HomeContent = () => {
           I also have my little piano cover :D 😂 you can visit my YT Channel >> 
           <div className="yt-icon">
 
-        <a target='_blank' href='https://www.youtube.com/channel/UClIaSr8ht7HEwAU_4MoZxlQ'><Youtube className='icon' fill='#000000' /></a>
+          <a target='_blank' href='https://www.youtube.com/channel/UClIaSr8ht7HEwAU_4MoZxlQ'><Youtube className='icon' fill='#000000' /></a>
           </div>
         </div>
       <Footer />
