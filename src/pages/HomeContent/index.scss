@@ -64,10 +64,14 @@
     background-color: white;
     padding: 60px 60px;
     align-items: center;
-    .profile-image, .my-pic{
-      width: 200px;
+    .profile-image {
+      flex: 1;
+      .my-pic {
+        width: 200px;
+      }
     }
     .small-detail {
+      flex: 2;
       padding: 0 20px;
       text-align: left;
       span {
@@ -101,18 +105,19 @@
         }
       }
     }
-    .view-more-project{
-      button{
+    .view-more-project {
+      button {
         margin: 0 auto;
       }
     }
   }
-  .other-projects{
+  .other-projects {
     padding: 20px;
     font-size: 15px;
     vertical-align: middle;
+    color: #333;
     background-color: white;
-    .yt-icon{
+    .yt-icon {
       padding-left: 10px;
       display: inline-block;
       vertical-align: bottom;
